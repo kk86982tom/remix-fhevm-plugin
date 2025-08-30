@@ -1,0 +1,91 @@
+{
+  "name": "fhevm-remix-plugin",
+  "version": "1.0.0",
+  "description": "Remix plugin for deploying and interacting with FHEVM contracts",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 5173",
+    "serve": "vite preview --port 5173",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "deploy:fhevm": "hardhat run scripts/deploy.ts --network fhevmSepolia",
+    "setup:fhe": "node scripts/setup-fhevm.js",
+    "clean": "hardhat clean && rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@remixproject/plugin": "0.3.40",
+    "@remixproject/plugin-iframe": "0.3.40",
+    "dotenv": "^16.4.5",
+    "ethers": "5.7.2",
+    "fhevmjs": "0.5.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@typechain/hardhat": "^6.0.0",
+    "@types/node": "^20.10.4",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "@typescript-eslint/eslint-plugin": "6.15.0",
+    "@typescript-eslint/parser": "6.15.0",
+    "@vitejs/plugin-react": "4.2.1",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.56.0",
+    "hardhat": "^2.26.0",
+    "hardhat-gas-reporter": "^1.0.0",
+    "postcss": "8.4.32",
+    "solidity-coverage": "^0.8.0",
+    "tailwindcss": "3.3.6",
+    "ts-node": "10.9.2",
+    "tslib": "2.6.2",
+    "typechain": "^8.0.0",
+    "typescript": "5.3.3",
+    "vite": "5.0.8"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "keywords": [
+    "fhevm",
+    "remix",
+    "plugin",
+    "ethereum",
+    "homomorphic",
+    "encryption",
+    "privacy",
+    "zama"
+  ],
+  "author": "kk86982tom <kk86982tom@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zama-ai/fhevm-remix-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/zama-ai/fhevm-remix-plugin/issues"
+  },
+  "homepage": "https://github.com/zama-ai/fhevm-remix-plugin#readme",
+  "resolutions": {
+    "@nomicfoundation/hardhat-network-helpers": "1.0.0"
+  },
+  "overrides": {
+    "@nomicfoundation/hardhat-network-helpers": {
+      "hardhat": "^2.26.0"
+    },
+    "ethers": "5.7.2"
+  }
+}
