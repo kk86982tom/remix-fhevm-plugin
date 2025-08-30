@@ -1,0 +1,13 @@
+{
+  "name": "FHEVM Confidential Contracts",
+  "version": "1.0.0",
+  "description": "Remix plugin for deploying and interacting with FHEVM confidential smart contracts",
+  "icon": "",
+  "entry": "index.html",
+  "methods": [
+    "deployConfidentialERC20",
+    "deployConfidentialERC721", 
+    "encryptedTransfer",
+    "getDecryptedBalance"
+  ]
+}
