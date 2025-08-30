@@ -1,4 +1,5 @@
 # FHEVM Remix Plugin
+<img width="1028" height="938" alt="e0f4b0a0-0a43-458c-9c29-a20be697c59a" src="https://github.com/user-attachments/assets/31d9a05c-100c-472f-a17a-b6ed8a8d9a77" />
 
 A comprehensive Remix IDE plugin for deploying and interacting with Fully Homomorphic Encryption Virtual Machine (FHEVM) contracts. This plugin enables developers to easily deploy confidential smart contracts that preserve privacy through homomorphic encryption.
 
@@ -13,6 +14,8 @@ A comprehensive Remix IDE plugin for deploying and interacting with Fully Homomo
 - **Modern UI**: Clean, responsive interface with real-time feedback
 
 ## 🚀 Quick Start
+You can connect and use it directly on [Remix IDE](https://remix.ethereum.org/), or deploy it locally to issue your own customized Tokens and NFTs.
+
 
 ### Prerequisites
 
@@ -258,6 +261,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **kk86982tom** - *Lead Developer & Architect*
 - GitHub: [@kk86982tom](https://github.com/kk86982tom)
-- Email: kk86982tom@example.com
+- Email: juwen002@gmail.com
+
 
 *This project represents original work and innovation in FHEVM integration. Please respect intellectual property and provide proper attribution when using or referencing this code.*
